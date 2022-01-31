@@ -10,8 +10,9 @@
 </head>
 <body>
     <section>
+        <div class="circle"></div>
         <header>
-          <a href="https://i.postimg.cc/NFpkgcxk/logo.png" ><img src="https://i.postimg.cc/NFpkgcxk/logo.png"alt="logo"></a>  
+          <a ><img src="logo.png"alt="logo"></a>  
           <ul>
               <li><a href="#">inicio</a></li>
               <li><a href="#">menu</a></li>
@@ -24,14 +25,36 @@
         <div class="content">
         <div class="textbox">
          <h2>Não é apenas um cafe é <br><span style> starbucks<spam/></h2> 
-            <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt rerum mollitia laborum repellat architecto tempore amet aliquid in hic? 
-                Assumenda et laborum tempore ex deserunt repellat quidem.
+            <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Incidunt rerum mollitia laborum repellat architecto tempore amet aliquid in hic? 
+                <br>Assumenda et laborum tempore ex deserunt repellat quidem.
                  Eaque, minus repellendus!</p>  
              <a href="#">descubra mais</a>
         </div>
          <div class="imgbox">
-            <img src="https://i.postimg.cc/kDrg38xx/img1.png" class="starbucks">
+            <img src= "img1.png" class="starbucks">
             </div>
+            <ul class="thumb"> 
+                 
+                <li><img src="img1.png"      onclick="imgSlider('img1.png')"></li>
+                   <li> <img src="img2.png"  onclick="imgSlider('img2.png')"></li>
+                    <li><img src="img3.png"  onclick="imgSlider('img3.png')"></li>
+                </ul>
+                <ul class="sci">
+                  <li> <a href="#"> <img src="facebook.png" alt="logo facebook"></a></li>
+                    <li> <a href="#"> <img src="instagram.png" alt="logo instagram"></a></li>
+                        <li> <a href="#"> <img src="twitter.png" alt="logo twitter"></a></li>
+                </ul>
         </section>
+        <script type="text/javascript">
+			function imgSlider(anything){
+				document.querySelector('.starbucks').src = anything;
+			}
+			function changeCircleColor(color){
+				const circle = document.querySelector('.circle');
+				circle.style.background = color;
+			}
+		</script>
+
 </body>
 </html>
